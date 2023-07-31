@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Length Counter | Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Type a Word in the Box </h1>
+        <input id="word_entered" type="text" placeholder="Type here...">
+        <p id="display"></p>
+        <button onclick="counter()">Click to Calculate word length</button>
+    </div>
+    <script>
+        function counter(){
+            var word= document.getElementById("word_entered").value;
+            var len = word.length;
+            document.getElementById("display").innerHTML = len;
+        }
+    </script>
+</body>
+</html>
